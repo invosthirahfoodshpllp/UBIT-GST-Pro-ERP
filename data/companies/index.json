@@ -1,0 +1,28 @@
+[
+  {
+    "id": "comp_1791906573465",
+    "name": "Testing",
+    "gstin": "TESTING",
+    "phone": "Test",
+    "email": "",
+    "state": "Tamil Nadu",
+    "stateCode": "33",
+    "pincode": "636001",
+    "address": "28/100, Avvaiyar Street, Annathanapatty, Salem-636002.",
+    "businessType": "Distributor",
+    "businessCategory": "FMCG Products",
+    "upiId": "",
+    "logoUrl": "",
+    "signatureUrl": "",
+    "termsAndConditions": "1. Goods once sold will not be taken back.\n2. Payment due within specified period.",
+    "invoicePrefix": "",
+    "invoiceSuffix": "",
+    "invoicePrefixes": [],
+    "invoiceSuffixes": [],
+    "themeColor": "#0284c7",
+    "templateId": "gst_template_1",
+    "paperSize": "A4",
+    "additionalChargeCategories": [],
+    "createdAt": "2026-10-13T15:49:33.465Z"
+  }
+]

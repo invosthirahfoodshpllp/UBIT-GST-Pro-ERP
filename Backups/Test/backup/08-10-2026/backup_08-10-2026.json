@@ -1,0 +1,172 @@
+{
+  "version": "1.0.0",
+  "companyId": "comp_1791394961088",
+  "companyName": "Test",
+  "backupDate": "08/10/2026",
+  "dateFolder": "08-10-2026",
+  "timestamp": "2026-10-08T08:08:57.654Z",
+  "data": {
+    "meta": {
+      "id": "comp_1791394961088",
+      "name": "Test",
+      "gstin": "",
+      "phone": "7373902560",
+      "email": "",
+      "state": "Tamil Nadu",
+      "stateCode": "33",
+      "pincode": "636001",
+      "address": "28/100, Avvaiyar Street, Annathanapatty, Salem-636002.",
+      "businessType": "Distributor",
+      "businessCategory": "FMCG Products",
+      "upiId": "",
+      "logoUrl": "",
+      "signatureUrl": "",
+      "termsAndConditions": "1. Goods once sold will not be taken back.\n2. Payment should be made within specified due date.",
+      "invoicePrefix": "",
+      "invoiceSuffix": "",
+      "invoicePrefixes": [
+        "T/2026-2027/"
+      ],
+      "invoiceSuffixes": [],
+      "themeColor": "#059669",
+      "templateId": "gst_template_1",
+      "paperSize": "A4",
+      "createdAt": "2026-10-07T17:42:41.089Z",
+      "hiddenColumns": {
+        "hsn": false,
+        "batch": true,
+        "mrp": false,
+        "gstRate": false,
+        "tax": false
+      },
+      "customTitle": "TAX INVOICE",
+      "customSubtitle": "",
+      "customTerms": "1. Goods once sold will not be taken back.\n2. Payment due within credit terms.",
+      "defaultPrefix": "T/2026-2027/"
+    },
+    "parties": [
+      {
+        "id": "pty_1791398409670",
+        "name": "Test",
+        "type": "Customer",
+        "phone": "",
+        "gstin": "",
+        "billingAddress": "",
+        "shippingAddress": "",
+        "state": "Tamil Nadu",
+        "openingBalance": 0,
+        "currentBalance": 495,
+        "balanceType": "Receivable"
+      }
+    ],
+    "items": [],
+    "godowns": [
+      {
+        "id": "gdn_main",
+        "name": "Main Godown",
+        "type": "Godown",
+        "location": "Main Premises",
+        "contactPerson": "",
+        "phone": "",
+        "notes": "Default Primary Godown"
+      }
+    ],
+    "sales": [
+      {
+        "id": "inv_1791398430428",
+        "invoiceNo": "NT/26-27/001/2026-27",
+        "date": "2026-10-07",
+        "dueDate": "2026-10-14",
+        "marketingStaff": "",
+        "billType": "Credit",
+        "partyId": "pty_1791398409670",
+        "partyName": "Test",
+        "partyGstin": "",
+        "partyAddress": "",
+        "items": [
+          {
+            "itemId": "",
+            "name": "Test",
+            "hsn": "",
+            "batchNo": "",
+            "mrp": "55",
+            "qty": "11",
+            "unit": "PCS",
+            "price": "44.99",
+            "gstRate": 5,
+            "taxableAmount": 471.32,
+            "cgst": 11.79,
+            "sgst": 11.78,
+            "igst": 0,
+            "total": 494.89
+          }
+        ],
+        "subTotal": 471.32,
+        "cgstTotal": 11.79,
+        "sgstTotal": 11.78,
+        "igstTotal": 0,
+        "intermediateTotal": 494.89,
+        "additionalCharges": [],
+        "shipping": 0,
+        "roundOff": 0.11,
+        "grandTotal": 495,
+        "receivedAmount": 0,
+        "balanceDue": 495,
+        "status": "Unpaid",
+        "paymentMode": "Credit",
+        "bankAccountId": null,
+        "notes": "1. Goods once sold will not be taken back.\n2. Payment should be made within specified due date.",
+        "createdAt": "2026-10-07T18:40:30.428Z"
+      }
+    ],
+    "purchases": [],
+    "expenses": [],
+    "paymentsIn": [],
+    "paymentsOut": [],
+    "bankAccounts": [],
+    "cashInHand": {
+      "balance": 0,
+      "adjustments": []
+    },
+    "quotations": [],
+    "saleOrders": [],
+    "deliveryChallans": [],
+    "creditNotes": [],
+    "debitNotes": [],
+    "stockTransfers": [],
+    "manufacturingEntries": [],
+    "categories": [
+      "Test",
+      "Sample"
+    ],
+    "additionalChargesList": [],
+    "invoiceSettings": {
+      "paperSize": "A4",
+      "hideEmptyFields": true,
+      "hiddenColumns": [],
+      "templateId": "gst_template_1",
+      "showLogo": true,
+      "showSignature": true
+    },
+    "auditTrail": [
+      {
+        "timestamp": "2026-10-07T18:40:30.428Z",
+        "username": "admin",
+        "action": "Created Sale Invoice",
+        "details": "Invoice #NT/26-27/001/2026-27 for ₹495 to Test"
+      },
+      {
+        "timestamp": "2026-10-07T18:30:58.918Z",
+        "username": "admin",
+        "action": "Created Sale Invoice",
+        "details": "Invoice #POS-3859 for ₹650 to Walk-in Retail Customer"
+      },
+      {
+        "timestamp": "2026-10-07T17:42:41.089Z",
+        "username": "admin",
+        "action": "Company Initialized",
+        "details": "Blank company records ready for user data input"
+      }
+    ]
+  }
+}
