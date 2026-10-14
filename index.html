@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UBIT ERP GST Billing Software</title>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-BmCd4CNB.js"></script>
+    <script type="module" src="./assets/erp-enterprise-engine.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CzDQ3wMo.css">
+    
+    <!-- Intelligent Protocol Bridge for file:/// and Local Server Auto-Connect -->
+    <script>
+      (function() {
+        if (window.location.protocol === 'file:') {
+          function pingServer(onSuccess, onError) {
+            var img = new Image();
+            img.onload = onSuccess;
+            img.onerror = onError;
+            img.src = 'http://localhost:5173/assets/index-CzDQ3wMo.css?ping=' + Date.now();
+          }
+
+          function checkAndRedirect() {
+            pingServer(function() {
+              window.location.replace('http://localhost:5173/');
+            }, function() {
+              var root = document.getElementById('root');
+              if (root && (!root.children || root.children.length === 0 || root.querySelector('.local-bridge-card'))) {
+                root.className = 'min-h-screen flex items-center justify-center p-6 bg-slate-900 text-slate-100 font-sans';
+                root.innerHTML = '<div class="local-bridge-card" style="max-width:560px;background:#1e293b;border:1px solid #334155;border-radius:18px;padding:36px;box-shadow:0 25px 50px -12px rgba(0,0,0,0.6);text-align:center;">' +
+                  '<div style="font-size:46px;margin-bottom:12px;">🏢</div>' +
+                  '<h2 style="font-size:22px;font-weight:800;color:#38bdf8;margin:0 0 8px 0;letter-spacing:-0.5px;">UBIT ERP GST Billing Software</h2>' +
+                  '<p style="font-size:13px;color:#94a3b8;line-height:1.6;margin-bottom:20px;">' +
+                  'When opened as a direct file (<code>file:///</code>), browser security prevents loading local web modules.' +
+                  '</p>' +
+                  '<div style="background:#0f172a;border:1px solid #334155;border-radius:14px;padding:20px;margin-bottom:24px;text-align:left;font-size:13px;color:#cbd5e1;line-height:1.8;">' +
+                  '<strong style="color:#38bdf8;display:block;margin-bottom:6px;font-size:14px;">👉 To Launch with 1 Click:</strong>' +
+                  '1. Open this folder: <code style="color:#f1f5f9;background:#1e293b;padding:2px 6px;border-radius:4px;">D:\\Websites\\ERP 14-10-2026</code><br>' +
+                  '2. Double-click <strong style="color:#22c55e;">Launch-Software.bat</strong> (or <strong style="color:#a855f7;">Start-ERP-Background.vbs</strong> for silent mode).<br>' +
+                  '3. The local engine starts instantly on <strong>http://localhost:5173/</strong>.' +
+                  '</div>' +
+                  '<div style="display:flex;align-items:center;justify-content:center;gap:10px;font-size:12px;color:#64748b;">' +
+                  '<span style="display:inline-block;width:10px;height:10px;background:#38bdf8;border-radius:50%;animation:pulse 1.5s infinite;"></span>' +
+                  'Waiting for local engine... This page will auto-connect once launched.' +
+                  '</div>' +
+                  '</div>';
+              }
+              // Poll again every 1.5 seconds
+              setTimeout(checkAndRedirect, 1500);
+            });
+          }
+
+          setTimeout(checkAndRedirect, 300);
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-gray-50 text-slate-800 antialiased font-sans select-none overflow-hidden h-screen w-screen">
+    <div id="root" class="h-full w-full"></div>
+  </body>
+</html>
