@@ -1,0 +1,356 @@
+{
+  "meta": {
+    "id": "comp_demo",
+    "name": "UBIT Demo Enterprise",
+    "gstin": "33AABCS1429B1Z1",
+    "phone": "9842155678",
+    "email": "demo@ubitproerp.com",
+    "state": "Tamil Nadu",
+    "stateCode": "33",
+    "pincode": "636001",
+    "address": "45-B, M.G. Road, Near Town Hall, Salem - 636001",
+    "businessType": "Wholesale & Retail Distributor",
+    "businessCategory": "FMCG & Provisions",
+    "upiId": "ubitdemo@okaxis",
+    "logoUrl": "",
+    "signatureUrl": "",
+    "termsAndConditions": "1. Goods once sold will not be taken back.\n2. Payment due within 15 days.",
+    "invoicePrefix": "INV/26-27/",
+    "invoiceSuffix": "",
+    "invoicePrefixes": [
+      "INV/26-27/"
+    ],
+    "invoiceSuffixes": [],
+    "themeColor": "#10263c",
+    "menuTextColor": "#ffffff",
+    "menuIconColor": "#ffffff",
+    "templateId": "gst_template_1",
+    "paperSize": "A4",
+    "additionalChargeCategories": [],
+    "createdAt": "2026-10-15T00:00:00.000Z"
+  },
+  "parties": [
+    {
+      "id": "pty_1",
+      "name": "Balaji Super Market",
+      "partyType": "Customer",
+      "gstin": "33AABCB1234F1Z5",
+      "phone": "9841012345",
+      "email": "balaji@supermarket.in",
+      "state": "Tamil Nadu",
+      "stateCode": "33",
+      "address": "12, Bazaar Street, Salem - 636002",
+      "balance": 14500,
+      "openingBalance": 5000
+    },
+    {
+      "id": "pty_2",
+      "name": "Murugan General Stores",
+      "partyType": "Customer",
+      "gstin": "33AAGCM5678K1Z9",
+      "phone": "9841023456",
+      "email": "murugan@generalstores.in",
+      "state": "Tamil Nadu",
+      "stateCode": "33",
+      "address": "45, Cross Road, Erode - 638001",
+      "balance": 28900,
+      "openingBalance": 12000
+    },
+    {
+      "id": "pty_3",
+      "name": "Chennai Wholesale Hub",
+      "partyType": "Supplier",
+      "gstin": "33AABCC9012D1Z3",
+      "phone": "9841034567",
+      "email": "orders@chennaiwholesale.in",
+      "state": "Tamil Nadu",
+      "stateCode": "33",
+      "address": "88, Broadway, Chennai - 600001",
+      "balance": 42000,
+      "openingBalance": 20000
+    }
+  ],
+  "items": [
+    {
+      "id": "itm_1",
+      "name": "Royal Basmati Rice 25kg",
+      "itemCode": "RBR-25",
+      "hsnCode": "10063020",
+      "category": "Rice & Grains",
+      "unit": "BAG",
+      "taxRate": 5,
+      "purchasePrice": 1800,
+      "sellingPrice": 2200,
+      "stockQty": 120,
+      "minStockQty": 20,
+      "godownId": "gdn_main"
+    },
+    {
+      "id": "itm_2",
+      "name": "Gold Winner Sunflower Oil 1L",
+      "itemCode": "GWO-01",
+      "hsnCode": "15121910",
+      "category": "Edible Oils",
+      "unit": "LTR",
+      "taxRate": 5,
+      "purchasePrice": 110,
+      "sellingPrice": 135,
+      "stockQty": 250,
+      "minStockQty": 50,
+      "godownId": "gdn_main"
+    },
+    {
+      "id": "itm_3",
+      "name": "Premium Toor Dal 1kg",
+      "itemCode": "PTD-01",
+      "hsnCode": "07136000",
+      "category": "Pulses",
+      "unit": "KG",
+      "taxRate": 5,
+      "purchasePrice": 130,
+      "sellingPrice": 160,
+      "stockQty": 80,
+      "minStockQty": 25,
+      "godownId": "gdn_main"
+    }
+  ],
+  "godowns": [
+    {
+      "id": "gdn_main",
+      "name": "Main Godown",
+      "type": "Godown",
+      "location": "Salem Warehouse Block A",
+      "contactPerson": "R. Kumar",
+      "phone": "9842199887",
+      "notes": "Primary Warehouse"
+    }
+  ],
+  "sales": [
+    {
+      "id": "inv_1",
+      "invoiceNo": "INV/26-27/001",
+      "date": "2026-10-14",
+      "dueDate": "2026-10-29",
+      "partyId": "pty_1",
+      "partyName": "Balaji Super Market",
+      "paymentMode": "Credit",
+      "items": [
+        {
+          "itemId": "itm_1",
+          "name": "Royal Basmati Rice 25kg",
+          "qty": 5,
+          "rate": 2200,
+          "taxPercent": 5,
+          "taxAmount": 550,
+          "amount": 11550
+        }
+      ],
+      "subTotal": 11000,
+      "taxTotal": 550,
+      "grandTotal": 11550,
+      "receivedAmount": 0,
+      "balanceDue": 11550,
+      "status": "Unpaid"
+    },
+    {
+      "id": "inv_2",
+      "invoiceNo": "INV/26-27/002",
+      "date": "2026-10-15",
+      "dueDate": "2026-10-30",
+      "partyId": "pty_2",
+      "partyName": "Murugan General Stores",
+      "paymentMode": "Cash",
+      "items": [
+        {
+          "itemId": "itm_2",
+          "name": "Gold Winner Sunflower Oil 1L",
+          "qty": 20,
+          "rate": 135,
+          "taxPercent": 5,
+          "taxAmount": 135,
+          "amount": 2835
+        }
+      ],
+      "subTotal": 2700,
+      "taxTotal": 135,
+      "grandTotal": 2835,
+      "receivedAmount": 2835,
+      "balanceDue": 0,
+      "status": "Paid"
+    }
+  ],
+  "purchases": [
+    {
+      "id": "pur_1",
+      "billNo": "PUR/26-27/001",
+      "date": "2026-10-12",
+      "dueDate": "2026-10-27",
+      "partyId": "pty_3",
+      "partyName": "Chennai Wholesale Hub",
+      "paymentMode": "Credit",
+      "items": [
+        {
+          "itemId": "itm_1",
+          "name": "Royal Basmati Rice 25kg",
+          "qty": 50,
+          "rate": 1800,
+          "taxPercent": 5,
+          "taxAmount": 4500,
+          "amount": 94500
+        }
+      ],
+      "subTotal": 90000,
+      "taxTotal": 4500,
+      "grandTotal": 94500,
+      "paidAmount": 50000,
+      "balanceDue": 44500,
+      "status": "Partial"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "exp_1",
+      "expenseNo": "EXP/26-27/001",
+      "date": "2026-10-14",
+      "category": "Electricity",
+      "expenseType": "Indirect",
+      "payee": "TNEB Salem",
+      "amount": 4500,
+      "paymentMode": "Bank",
+      "notes": "Office Electricity Bill for Oct 2026"
+    }
+  ],
+  "paymentsIn": [
+    {
+      "id": "payin_1",
+      "receiptNo": "REC/26-27/001",
+      "date": "2026-10-15",
+      "partyId": "pty_1",
+      "partyName": "Balaji Super Market",
+      "amount": 5000,
+      "paymentMode": "Bank",
+      "notes": "Part payment against previous ledger"
+    }
+  ],
+  "paymentsOut": [
+    {
+      "id": "payout_1",
+      "voucherNo": "PAY/26-27/001",
+      "date": "2026-10-13",
+      "partyId": "pty_3",
+      "partyName": "Chennai Wholesale Hub",
+      "amount": 50000,
+      "paymentMode": "Bank",
+      "notes": "Advance against purchase order"
+    }
+  ],
+  "bankAccounts": [
+    {
+      "id": "bnk_1",
+      "bankName": "HDFC Bank",
+      "accountName": "UBIT Demo Enterprise Current A/C",
+      "accountNumber": "50200012345678",
+      "ifscCode": "HDFC0000123",
+      "branch": "Town Hall Branch, Salem",
+      "balance": 150000
+    }
+  ],
+  "cashInHand": {
+    "balance": 25000,
+    "adjustments": [
+      {
+        "id": "adj_1",
+        "date": "2026-10-10",
+        "type": "Add",
+        "amount": 25000,
+        "notes": "Opening cash balance"
+      }
+    ]
+  },
+  "quotations": [],
+  "saleOrders": [
+    {
+      "id": "so_1",
+      "orderNo": "SO/26-27/001",
+      "date": "2026-10-15",
+      "deliveryDate": "2026-10-20",
+      "partyId": "pty_1",
+      "partyName": "Balaji Super Market",
+      "items": [
+        {
+          "itemId": "itm_3",
+          "name": "Premium Toor Dal 1kg",
+          "qty": 30,
+          "rate": 160,
+          "taxPercent": 5,
+          "taxAmount": 240,
+          "amount": 5040
+        }
+      ],
+      "subTotal": 4800,
+      "taxTotal": 240,
+      "grandTotal": 5040,
+      "status": "Confirmed"
+    }
+  ],
+  "purchaseOrders": [
+    {
+      "id": "po_1",
+      "orderNo": "PO/26-27/001",
+      "date": "2026-10-14",
+      "expectedDate": "2026-10-22",
+      "partyId": "pty_3",
+      "partyName": "Chennai Wholesale Hub",
+      "items": [
+        {
+          "itemId": "itm_2",
+          "name": "Gold Winner Sunflower Oil 1L",
+          "qty": 100,
+          "rate": 110,
+          "taxPercent": 5,
+          "taxAmount": 550,
+          "amount": 11550
+        }
+      ],
+      "subTotal": 11000,
+      "taxTotal": 550,
+      "grandTotal": 11550,
+      "status": "Confirmed"
+    }
+  ],
+  "deliveryChallans": [],
+  "creditNotes": [],
+  "debitNotes": [],
+  "stockTransfers": [],
+  "manufacturingEntries": [],
+  "categories": [
+    {
+      "id": "cat_1",
+      "name": "Rice & Grains"
+    },
+    {
+      "id": "cat_2",
+      "name": "Edible Oils"
+    },
+    {
+      "id": "cat_3",
+      "name": "Pulses"
+    }
+  ],
+  "invoiceSettings": {
+    "paperSize": "A4",
+    "hideEmptyFields": true,
+    "hiddenColumns": [],
+    "templateId": "gst_template_1",
+    "showLogo": true,
+    "showSignature": true
+  },
+  "auditTrail": [
+    {
+      "timestamp": "2026-10-15T00:00:00.000Z",
+      "username": "Pradheep",
+      "action": "Company Initialized",
+      "details": "UBIT Demo Enterprise workspace ready"
+    }
+  ]
+}

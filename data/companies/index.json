@@ -1,0 +1,32 @@
+[
+  {
+    "id": "comp_demo",
+    "name": "UBIT Demo Enterprise",
+    "gstin": "33AABCS1429B1Z1",
+    "phone": "9842155678",
+    "email": "demo@ubitproerp.com",
+    "state": "Tamil Nadu",
+    "stateCode": "33",
+    "pincode": "636001",
+    "address": "45-B, M.G. Road, Near Town Hall, Salem - 636001",
+    "businessType": "Wholesale & Retail Distributor",
+    "businessCategory": "FMCG & Provisions",
+    "upiId": "ubitdemo@okaxis",
+    "logoUrl": "",
+    "signatureUrl": "",
+    "termsAndConditions": "1. Goods once sold will not be taken back.\n2. Payment due within 15 days.",
+    "invoicePrefix": "INV/26-27/",
+    "invoiceSuffix": "",
+    "invoicePrefixes": [
+      "INV/26-27/"
+    ],
+    "invoiceSuffixes": [],
+    "themeColor": "#10263c",
+    "menuTextColor": "#ffffff",
+    "menuIconColor": "#ffffff",
+    "templateId": "gst_template_1",
+    "paperSize": "A4",
+    "additionalChargeCategories": [],
+    "createdAt": "2026-10-15T00:00:00.000Z"
+  }
+]

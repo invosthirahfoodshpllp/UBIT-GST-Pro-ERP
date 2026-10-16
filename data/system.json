@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "id": "usr_pradheep",
+      "username": "Pradheep",
+      "name": "Pradheep (Admin)",
+      "password": "Pradheep@123",
+      "role": "Admin",
+      "assignedCompanyIds": [
+        "comp_demo"
+      ],
+      "createdAt": "2026-10-13T22:00:00.000Z"
+    },
+    {
+      "id": "usr_hari",
+      "username": "Hari",
+      "name": "Hari (Admin)",
+      "password": "Hari@123",
+      "role": "Admin",
+      "assignedCompanyIds": [
+        "comp_demo"
+      ],
+      "createdAt": "2026-10-13T22:00:00.000Z"
+    }
+  ],
+  "backupConfig": {
+    "localBackupEnabled": true,
+    "localBackupPath": "D:\\ERP\\ERP\\data\\backups",
+    "localBackupTime": "23:00",
+    "lastLocalBackup": "2026-10-15T17:30:00.031Z",
+    "gdriveEnabled": true,
+    "gdriveAccountEmail": "",
+    "gdriveSyncTimes": [
+      "13:00",
+      "21:00"
+    ],
+    "lastGdriveBackup": null,
+    "gdriveConnected": false,
+    "gdriveFolder": "GST_ERP_Backups"
+  },
+  "settings": {
+    "defaultCurrency": "₹",
+    "syncPort": 4500,
+    "enableLanSync": true
+  },
+  "githubConfig": {
+    "enabled": true,
+    "owner": "",
+    "repo": "",
+    "branch": "main",
+    "token": "",
+    "websiteDomain": "",
+    "autoRealtimeSync": true,
+    "autoDailyFolderBackup": true,
+    "backupRootFolder": "Backups",
+    "lastSyncAt": null,
+    "lastBackupFolder": null,
+    "connected": false
+  }
+}
